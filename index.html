@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>testxx</title>
+</head>
+<body>
+    <script>
+    
+    <p id="view">ここにループ処理の結果が表示されます</p>
+
+
+
+//１．変数の入れ物を作成
+let str = "";
+
+//２．繰り返し処理で、文字列を作成
+for(let i=0; i<10 ; i++){
+    str += `繰り返し処理:${i}回目`;
+    console.log(i);
+}
+
+
+//３．変数 str  に入っている文字列をpタグに
+$("#view").html(str);
+
+
+</script>
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+ <script src="js/test.js"></script>  
+</body>
+</html>
